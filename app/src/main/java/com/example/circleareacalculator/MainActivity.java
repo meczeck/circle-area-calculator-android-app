@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Button calcButton = (Button) findViewById(R.id.calculateAreaButton);
         //To create Alert dialog object
         builder = new AlertDialog.Builder(this);
-
+        //Button click  event listener
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Event handler
     public void calculateArea() {
         try {
             if (editTextCircleRadius.getText().toString().isEmpty()) {
