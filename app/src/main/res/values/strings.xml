@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Circle Area Calculator</string>
+    <string name="calc_button">CALCULATE AREA</string>
+    <string name="radius_field_hint_text">Enter Radius</string>
+    <string name="dialog_title">Results</string>
+    <string name="exception_error">Invalid Input, Try Again</string>
+    <string name="radius_is_null_message">Please, enter radius!</string>
+</resources>
