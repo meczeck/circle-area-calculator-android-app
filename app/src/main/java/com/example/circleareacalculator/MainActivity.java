@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    //This referenced data type help to round numbers into 2 decimal places
+    //This referenced data type help to round values into 2 decimal places
     private static final DecimalFormat twoDpFormat = new DecimalFormat("0.00");
     private EditText editTextCircleRadius;
     private AlertDialog.Builder builder;
