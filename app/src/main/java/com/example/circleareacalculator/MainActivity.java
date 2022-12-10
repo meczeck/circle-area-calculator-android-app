@@ -14,10 +14,10 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    //This referenced data type help to round values into 2 decimal places
-    private static final DecimalFormat twoDpFormat = new DecimalFormat("0.00");
     private EditText editTextCircleRadius;
     private AlertDialog.Builder builder;
+    //This reference data type help to round values into 2 decimal places
+    private static final DecimalFormat twoDpFormat = new DecimalFormat("0.00");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         //To get EditText for Radius from xml
         editTextCircleRadius = (EditText) findViewById(R.id.editTextRadius);
-        //To get Button Component from xml
+        //To get Button view from xml
         Button calcButton = (Button) findViewById(R.id.calculateAreaButton);
         //To create Alert dialog object
         builder = new AlertDialog.Builder(this);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             if (editTextCircleRadius.getText().toString().isEmpty()) {
                 Toast.makeText(getApplicationContext(), R.string.radius_is_null_message, Toast.LENGTH_SHORT).show();
             } else {
-                //To convert editText values to integers
+                //To convert editText values to double
                 Double circleRadius = Double.parseDouble(editTextCircleRadius.getText().toString());
 
                 //To calculate Circle area
