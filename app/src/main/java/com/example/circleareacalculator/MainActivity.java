@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 Double circleARea = (Math.PI * circleRadius * circleRadius);
 
                 //Alert Dialog to display results
-                builder.setMessage("Area of the circle is " + twoDpFormat.format(circleARea))
+                builder.setMessage("Area of the circle is " + twoDpFormat.format(circleARea) + "square units")
                         .setCancelable(false)
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
